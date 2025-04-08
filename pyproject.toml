@@ -24,7 +24,6 @@ Source = "https://github.com/mozilla-ai/speech-to-text"
 
 [tool.setuptools.packages.find]
 exclude = ["tests", "tests.*"]
-where = ["src"]
 namespaces = false
 
 [tool.setuptools_scm]
