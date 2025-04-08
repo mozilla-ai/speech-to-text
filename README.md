@@ -9,9 +9,23 @@
   </picture>
 </p>
 
-This blueprint guides you to transcribe audio files with open source Whisper models using [Speaches](https://github.com/speaches-ai/speaches/)
 
-📘 To explore this project further and discover other Blueprints, visit the [**Blueprints Hub**](https://developer-hub.mozilla.ai/).
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+[![Speaches](https://img.shields.io/badge/Speaches-%F0%9F%8E%A4-yellow)](https://github.com/speaches-ai/speaches/)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
+[![](https://dcbadge.limes.pink/api/server/YuMNeuKStr?style=flat)](https://discord.gg/YuMNeuKStr) <br>
+[![Docs](https://github.com/mozilla-ai/blueprint-template/actions/workflows/docs.yaml/badge.svg)](https://github.com/mozilla-ai/blueprint-template/actions/workflows/docs.yaml/)
+[![Tests](https://github.com/mozilla-ai/blueprint-template/actions/workflows/tests.yaml/badge.svg)](https://github.com/mozilla-ai/blueprint-template/actions/workflows/tests.yaml/)
+[![Ruff](https://github.com/mozilla-ai/blueprint-template/actions/workflows/lint.yaml/badge.svg?label=Ruff)](https://github.com/mozilla-ai/blueprint-template/actions/workflows/lint.yaml/)
+
+[Blueprints Hub](https://blueprints.mozilla.ai/)
+| [Documentation](https://mozilla-ai.github.io/Blueprint-template/)
+| [Getting Started](https://mozilla-ai.github.io/Blueprint-template/getting-started)
+| [Contributing](CONTRIBUTING.md)
+
+</div>
 
 # Getting Started
 
