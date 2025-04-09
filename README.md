@@ -27,6 +27,8 @@
 
 </div>
 
+🤝 **_This Blueprint was a result of an [EleutherAI](https://www.eleuther.ai/) <> [mozilla.ai](https://www.mozilla.ai/) collaboration, as part of their work on [Open Datasets for LLM Training](https://blog.mozilla.org/en/mozilla/dataset-convening/)_**.
+
 # Getting Started
 
 This tutorial will guide you through setting up and using [Speaches](https://github.com/speaches-ai/speaches/) to transcribe audio files using the OpenAI CLI. Speaches is an OpenAI API-compatible server that provides streaming transcription, translation, and speech generation capabilities.
