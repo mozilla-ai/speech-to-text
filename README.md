@@ -16,11 +16,9 @@
 [![Speaches](https://img.shields.io/badge/Speaches-%F0%9F%8E%A4-yellow)](https://github.com/speaches-ai/speaches/)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 [![](https://dcbadge.limes.pink/api/server/YuMNeuKStr?style=flat)](https://discord.gg/YuMNeuKStr) <br>
-[![Docs](https://github.com/mozilla-ai/speech-to-text/actions/workflows/docs.yaml/badge.svg)](https://github.com/mozilla-ai/speech-to-text/actions/workflows/docs.yaml/)
 
 [Blueprints Hub](https://blueprints.mozilla.ai/)
-| [Documentation](https://mozilla-ai.github.io/speech-to-text/)
-| [Getting Started](https://mozilla-ai.github.io/speech-to-text/getting-started)
+| [Documentation](https://github.com/mozilla-ai/speech-to-text/blob/main/README.md)
 | [Contributing](CONTRIBUTING.md)
 
 </div>
