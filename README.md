@@ -23,7 +23,7 @@
 
 </div>
 
-# Transcribe audio files using Speaches
+# Transcribe audio files using [Speaches](https://github.com/speaches-ai/speaches/)
 
 🤝 **_This Blueprint was a result of an [EleutherAI](https://www.eleuther.ai/) <> [mozilla.ai](https://www.mozilla.ai/) collaboration, as part of their work on [Open Datasets for LLM Training](https://blog.mozilla.org/en/mozilla/dataset-convening/)_**.
 
