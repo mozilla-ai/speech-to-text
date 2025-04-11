@@ -48,7 +48,7 @@ First, let's set up the Speaches server using Docker. You have a choice between 
 Create a volume to store the downloaded models (so they persist even if you restart the container):
 
 ```bash
-docker volume create hf-hub-cache
+sudo docker volume create hf-hub-cache
 ```
 
 #### For CUDA (if you have a compatible NVIDIA GPU):
