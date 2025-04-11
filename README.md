@@ -21,13 +21,13 @@
 | [Documentation](https://github.com/mozilla-ai/speech-to-text/blob/main/README.md)
 | [Contributing](CONTRIBUTING.md)
 
+🤝 **_This Blueprint was a result of an [EleutherAI](https://www.eleuther.ai/) <> [mozilla.ai](https://www.mozilla.ai/) collaboration, as part of their work on [Open Datasets for LLM Training](https://blog.mozilla.org/en/mozilla/dataset-convening/)_**.
+
 </div>
 
 # Transcribe audio files using [Speaches](https://github.com/speaches-ai/speaches/)
 
-🤝 **_This Blueprint was a result of an [EleutherAI](https://www.eleuther.ai/) <> [mozilla.ai](https://www.mozilla.ai/) collaboration, as part of their work on [Open Datasets for LLM Training](https://blog.mozilla.org/en/mozilla/dataset-convening/)_**.
-
-This tutorial will guide you through setting up and using [Speaches](https://github.com/speaches-ai/speaches/) to transcribe audio files using the OpenAI CLI. Speaches is an OpenAI API-compatible server that provides streaming transcription, translation, and speech generation capabilities.
+This tutorial will guide you through setting up and using [Speaches](https://github.com/speaches-ai/speaches/) to transcribe audio files from the command line or a locally hosted demo UI. Speaches is an OpenAI API-compatible server that provides streaming transcription, translation, and speech generation capabilities.
 
 ### Prerequisites
 
