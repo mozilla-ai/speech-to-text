@@ -23,13 +23,13 @@
 
 </div>
 
-🤝 **_This Blueprint was a result of an [EleutherAI](https://www.eleuther.ai/) <> [mozilla.ai](https://www.mozilla.ai/) collaboration, as part of their work on [Open Datasets for LLM Training](https://blog.mozilla.org/en/mozilla/dataset-convening/)_**.
+# Transcribe audio files using Speaches
 
-# Getting Started
+🤝 **_This Blueprint was a result of an [EleutherAI](https://www.eleuther.ai/) <> [mozilla.ai](https://www.mozilla.ai/) collaboration, as part of their work on [Open Datasets for LLM Training](https://blog.mozilla.org/en/mozilla/dataset-convening/)_**.
 
 This tutorial will guide you through setting up and using [Speaches](https://github.com/speaches-ai/speaches/) to transcribe audio files using the OpenAI CLI. Speaches is an OpenAI API-compatible server that provides streaming transcription, translation, and speech generation capabilities.
 
-## Prerequisites
+### Prerequisites
 
 - An audio file in a supported format: `mp3`, `mp4`, `mpeg`, `mpga`, `m4a`, `wav`, and `webm`
 - **System requirements**:
