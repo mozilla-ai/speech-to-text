@@ -29,46 +29,6 @@
 
 This tutorial will guide you through setting up and using [Speaches](https://github.com/speaches-ai/speaches/) to transcribe audio files from the command line or a locally hosted demo UI. Speaches is an OpenAI API-compatible server that provides streaming transcription, translation, and speech generation capabilities.
 
-## Table of Contents
-
-- [Install Speaches using Docker](#install-speaches-using-docker)
-  <details>
-  <summary>Options</summary>
-
-  - [Using Docker](#using-docker)
-  - [For CUDA (if you have a compatible NVIDIA GPU)](#for-cuda-if-you-have-a-compatible-nvidia-gpu)
-  - [For CPU (if you don't have a compatible GPU)](#for-cpu-if-you-dont-have-a-compatible-gpu)
-
-  </details>
-- [Using the Speaches Playground GUI](#using-the-speaches-playground-gui)
-- [Install the OpenAI CLI](#install-the-openai-cli)
-- [Set Up Environment Variables](#set-up-environment-variables)
-- [Transcribe an Audio File](#transcribe-an-audio-file)
-  - [Basic Transcription](#basic-transcription)
-  <details>
-  <summary>Advanced Options</summary>
-  
-  - [Choosing a Different Model](#choosing-a-different-model)
-  - [Getting JSON Output with Timestamps](#getting-json-output-with-timestamps)
-  - [Specifying the Language](#specifying-the-language)
-  - [Creating SRT Subtitle Files](#creating-srt-subtitle-files)
-
-    </details>
-- [Using custom Models from Hugging Face](#using-custom-models-from-hugging-face)
-- [Troubleshooting](#troubleshooting)
-  <details>
-  <summary>Possible errors</summary>
-
-  - [No output from transcription](#no-output-from-transcription)
-  - [Error connecting to the server](#error-connecting-to-the-server)
-  - [Model download issues](#model-download-issues)
-
-  </details>
-- [Next Steps](#next-steps)
-- [Shutting Down](#shutting-down)
-- [Hardware requirements](#hardware-requirements)
-- [License](#license)
-
 ## Install Speaches using Docker
 
 First, let's set up the Speaches server using Docker. You have a choice between using the CPU or GPU version depending on your hardware.
