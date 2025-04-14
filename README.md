@@ -29,8 +29,7 @@
 
 This tutorial will guide you through setting up and using [Speaches](https://github.com/speaches-ai/speaches/) to transcribe audio files from the command line or a locally hosted demo UI. Speaches is an OpenAI API-compatible server that provides streaming transcription, translation, and speech generation capabilities.
 
-<details>
-<summary>**Table of Contents**</summary>
+## Table of Contents
 
 - [Install Speaches using Docker](#install-speaches-using-docker)
   <details>
