@@ -29,15 +29,48 @@
 
 This tutorial will guide you through setting up and using [Speaches](https://github.com/speaches-ai/speaches/) to transcribe audio files from the command line or a locally hosted demo UI. Speaches is an OpenAI API-compatible server that provides streaming transcription, translation, and speech generation capabilities.
 
-### Prerequisites
+<details>
+<summary>**Table of Contents**</summary>
 
-- An audio file in a supported format: `mp3`, `mp4`, `mpeg`, `mpga`, `m4a`, `wav`, and `webm`
-- **System requirements**:
-  - OS: Linux, macOS, Windows ([WSL](https://docs.docker.com/desktop/features/wsl/))
-  - Python 3.10 or higher
-  - Docker
-  - Minimum RAM: 16GB
-  - Disk space: 40GB
+- [Install Speaches using Docker](#install-speaches-using-docker)
+  <details>
+  <summary>Subsections</summary>
+
+  - [Using Docker](#using-docker)
+  - [For CUDA (if you have a compatible NVIDIA GPU)](#for-cuda-if-you-have-a-compatible-nvidia-gpu)
+  - [For CPU (if you don't have a compatible GPU)](#for-cpu-if-you-dont-have-a-compatible-gpu)
+
+  </details>
+- [Using the Speaches Playground GUI](#using-the-speaches-playground-gui)
+- [Install the OpenAI CLI](#install-the-openai-cli)
+- [Set Up Environment Variables](#set-up-environment-variables)
+- [Transcribe an Audio File](#transcribe-an-audio-file)
+  <details>
+  <summary>Subsections</summary>
+
+  - [Basic Transcription](#basic-transcription)
+  - [Advanced Options](#advanced-options)
+    - [Choosing a Different Model](#choosing-a-different-model)
+    - [Getting JSON Output with Timestamps](#getting-json-output-with-timestamps)
+    - [Specifying the Language](#specifying-the-language)
+    - [Creating SRT Subtitle Files](#creating-srt-subtitle-files)
+
+  </details>
+- [Using custom Models from Hugging Face](#using-custom-models-from-hugging-face)
+- [Troubleshooting](#troubleshooting)
+  <details>
+  <summary>Subsections</summary>
+
+  - [No output from transcription](#no-output-from-transcription)
+  - [Error connecting to the server](#error-connecting-to-the-server)
+  - [Model download issues](#model-download-issues)
+
+  </details>
+- [Next Steps](#next-steps)
+- [Shutting Down](#shutting-down)
+- [Hardware requirements](#hardware-requirements)
+- [License](#license)
+</details>
 
 ## Install Speaches using Docker
 
@@ -208,6 +241,16 @@ sudo docker stop speaches
 
 This will stop the container, but thanks to the volume we created, the downloaded models will be preserved for future use.
 
+### Hardware requirements
+
+- An audio file in a supported format: `mp3`, `mp4`, `mpeg`, `mpga`, `m4a`, `wav`, and `webm`
+- **System requirements**:
+  - OS: Linux, macOS, Windows ([WSL](https://docs.docker.com/desktop/features/wsl/))
+  - Python 3.10 or higher
+  - Docker
+  - Minimum RAM: 16GB
+  - Disk space: 40GB
+  - 
 ## License
 
 This project is licensed under the Apache 2.0 License. See the [LICENSE](LICENSE) file for details.
