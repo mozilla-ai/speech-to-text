@@ -68,9 +68,6 @@ sudo docker run \
 
 This will pull the necessary Docker image and start the Speaches server in the background. The server will be accessible at `http://localhost:8000`.
 
-![Speaches Playground GUI](images/speaches_playground_screenshot.png "Speaches Playground GUI")
-
-
 When you're done, you can stop the Speaches server with:
 
 ```bash
