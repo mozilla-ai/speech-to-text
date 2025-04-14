@@ -33,7 +33,7 @@ This tutorial will guide you through setting up and using [Speaches](https://git
 
 - [Install Speaches using Docker](#install-speaches-using-docker)
   <details>
-  <summary>Subsections</summary>
+  <summary>Options</summary>
 
   - [Using Docker](#using-docker)
   - [For CUDA (if you have a compatible NVIDIA GPU)](#for-cuda-if-you-have-a-compatible-nvidia-gpu)
@@ -44,21 +44,20 @@ This tutorial will guide you through setting up and using [Speaches](https://git
 - [Install the OpenAI CLI](#install-the-openai-cli)
 - [Set Up Environment Variables](#set-up-environment-variables)
 - [Transcribe an Audio File](#transcribe-an-audio-file)
-  <details>
-  <summary>Subsections</summary>
-
   - [Basic Transcription](#basic-transcription)
-  - [Advanced Options](#advanced-options)
-    - [Choosing a Different Model](#choosing-a-different-model)
-    - [Getting JSON Output with Timestamps](#getting-json-output-with-timestamps)
-    - [Specifying the Language](#specifying-the-language)
-    - [Creating SRT Subtitle Files](#creating-srt-subtitle-files)
+  <details>
+  <summary>Advanced Options</summary>
+  
+  - [Choosing a Different Model](#choosing-a-different-model)
+  - [Getting JSON Output with Timestamps](#getting-json-output-with-timestamps)
+  - [Specifying the Language](#specifying-the-language)
+  - [Creating SRT Subtitle Files](#creating-srt-subtitle-files)
 
-  </details>
+    </details>
 - [Using custom Models from Hugging Face](#using-custom-models-from-hugging-face)
 - [Troubleshooting](#troubleshooting)
   <details>
-  <summary>Subsections</summary>
+  <summary>Possible errors</summary>
 
   - [No output from transcription](#no-output-from-transcription)
   - [Error connecting to the server](#error-connecting-to-the-server)
@@ -69,7 +68,6 @@ This tutorial will guide you through setting up and using [Speaches](https://git
 - [Shutting Down](#shutting-down)
 - [Hardware requirements](#hardware-requirements)
 - [License](#license)
-</details>
 
 ## Install Speaches using Docker
 
