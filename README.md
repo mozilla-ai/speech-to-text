@@ -33,7 +33,7 @@ You can use Speaches either through a web interface using Docker or via the comm
 
 ## Using [Docker](https://docs.docker.com/engine/install/) to run Speaches
 
-First, let's set up the Speaches server using Docker. You have a choice between using the CPU or GPU version depending on your hardware.
+We can use pre-built images of Speaches to bypass manual installation. This is the recommended way to run Speaches, as it simplifies the setup process and ensures that you have all the necessary dependencies. Note that you have a choice between using the CPU or GPU version depending on your hardware.
 
 Create a volume to store the downloaded models (so they persist even if you restart the container):
 
