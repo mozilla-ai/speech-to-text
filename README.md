@@ -9,29 +9,31 @@
   </picture>
 </p>
 
-This blueprint guides you to transcribe audio files with open source Whisper models using [Speaches](https://github.com/speaches-ai/speaches/)
 
-📘 To explore this project further and discover other Blueprints, visit the [**Blueprints Hub**](https://developer-hub.mozilla.ai/).
+<div align="center">
 
-# Getting Started
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+[![Speaches](https://img.shields.io/badge/Speaches-%F0%9F%8E%A4-yellow)](https://github.com/speaches-ai/speaches/)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
+[![](https://dcbadge.limes.pink/api/server/YuMNeuKStr?style=flat)](https://discord.gg/YuMNeuKStr) <br>
 
-This tutorial will guide you through setting up and using [Speaches](https://github.com/speaches-ai/speaches/) to transcribe audio files using the OpenAI CLI. Speaches is an OpenAI API-compatible server that provides streaming transcription, translation, and speech generation capabilities.
+[Blueprints Hub](https://blueprints.mozilla.ai/)
+| [Documentation](https://github.com/mozilla-ai/speech-to-text/blob/main/README.md)
+| [Contributing](CONTRIBUTING.md)
 
-## Prerequisites
+🤝 **_This Blueprint was a result of an [EleutherAI](https://www.eleuther.ai/) <> [mozilla.ai](https://www.mozilla.ai/) collaboration, as part of their work on [Open Datasets for LLM Training](https://blog.mozilla.org/en/mozilla/dataset-convening/)_**.
 
-- An audio file in a supported format: `mp3`, `mp4`, `mpeg`, `mpga`, `m4a`, `wav`, and `webm`
-- **System requirements**:
-  - OS: Linux, macOS, Windows ([WSL](https://docs.docker.com/desktop/features/wsl/))
-  - Python 3.10 or higher
-  - Docker
-  - Minimum RAM: 16GB
-  - Disk space: 40GB
+</div>
 
-## Install Speaches using Docker
+# Transcribe audio files using [Speaches](https://github.com/speaches-ai/speaches/)
+
+This tutorial will guide you through setting up and using [Speaches](https://github.com/speaches-ai/speaches/) to transcribe audio files from the command line or a locally hosted demo UI. Speaches is an OpenAI API-compatible server that provides streaming transcription, translation, and speech generation capabilities.
+
+You can use Speaches either through a web interface using Docker or via the command line by installing the OpenAI CLI tool.
+
+## Using [Docker](https://docs.docker.com/engine/install/) to run Speaches
 
 First, let's set up the Speaches server using Docker. You have a choice between using the CPU or GPU version depending on your hardware.
-
-### Using Docker
 
 Create a volume to store the downloaded models (so they persist even if you restart the container):
 
@@ -66,13 +68,16 @@ sudo docker run \
 
 This will pull the necessary Docker image and start the Speaches server in the background. The server will be accessible at `http://localhost:8000`.
 
-## Using the Speaches Playground GUI
+When you're done, you can stop the Speaches server with:
 
-To try the different configuration options Speaches provides, you can visit the Speaches Playground GUI located at `http://localhost:8000`.
+```bash
+sudo docker stop speaches
+```
 
-![Speaches Playground GUI](images/speaches_playground_screenshot.png "Speaches Playground GUI")
+This will stop the container, but thanks to the volume we created, the downloaded models will be preserved for future use.
 
-## Install the OpenAI CLI
+
+## Using the CLI version
 
 Speaches is designed to be compatible with the OpenAI API. To have more control over our output, we can use the OpenAI CLI as our Speaches client. Let's install the OpenAI command-line interface to interact with the Speaches server:
 
@@ -80,7 +85,7 @@ Speaches is designed to be compatible with the OpenAI API. To have more control 
 pip install openai
 ```
 
-## Set Up Environment Variables
+### Set Up Environment Variables
 
 Even though Speaches doesn't require an API key, the OpenAI client does. Configure these environment variables:
 
@@ -94,11 +99,11 @@ export OPENAI_API_KEY="cant-be-empty"
 
 > **Note**: The API key doesn't need to be a valid OpenAI key, but it cannot be empty due to the OpenAI client requirements.
 
-## Transcribe an Audio File
+### Transcribe an Audio File
 
 Now you're ready to transcribe your first audio file. Make sure you have an audio file ready (we'll use `sample.mp3` in this example).
 
-### Basic Transcription:
+#### Basic Transcription:
 
 ```bash
 openai api audio.transcriptions.create -m Systran/faster-whisper-medium -f sample.mp3 --response-format text > sample.txt
@@ -156,9 +161,9 @@ Speaches can use any compatible fine-tuned Whisper model from Hugging Face which
 openai api audio.transcriptions.create -m smcproject/vegam-whisper-medium-ml -f sample_ml.mp3 --language ml --response-format text > sample_ml.txt
 ```
 
-[This model](https://huggingface.co/smcproject/vegam-whisper-medium-ml) works particularly well for Malayalam audio because it was fine-tuned on Mozilla's Common Voice Malayalam subset.
+For example, [this model](https://huggingface.co/smcproject/vegam-whisper-medium-ml) works particularly well for Malayalam audio because it was fine-tuned on Mozilla's Common Voice Malayalam subset.
 
-For other languages or specific domains, you can search for fine-tuned Whisper models on Hugging Face and use them in the same way.
+For other languages or specific domains, you can search for fine-tuned Whisper models (faster-whisper variant!) on Hugging Face and use them in the same way.
 
 ## Troubleshooting
 
@@ -186,16 +191,17 @@ Once you're comfortable with basic transcription, you might want to explore othe
 
 Check out the [Speaches documentation](https://speaches.ai) for more information on these advanced features.
 
-## Shutting Down
 
-When you're done, you can stop the Speaches server with:
+### Hardware requirements
 
-```bash
-sudo docker stop speaches
-```
-
-This will stop the container, but thanks to the volume we created, the downloaded models will be preserved for future use.
-
+- An audio file in a supported format: `mp3`, `mp4`, `mpeg`, `mpga`, `m4a`, `wav`, and `webm`
+- **System requirements**:
+  - OS: Linux, macOS, Windows ([WSL](https://docs.docker.com/desktop/features/wsl/))
+  - Python 3.10 or higher
+  - Docker
+  - Minimum RAM: 16GB
+  - Disk space: 40GB
+  - 
 ## License
 
 This project is licensed under the Apache 2.0 License. See the [LICENSE](LICENSE) file for details.
