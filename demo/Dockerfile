@@ -1,3 +1,5 @@
+# Dockerfile for speaches.ai ASR Server
+# Base image directly using the pre-built speaches image
 FROM ghcr.io/speaches-ai/speaches:latest-cpu
 USER ubuntu
 ENV HOME=/home/ubuntu \
