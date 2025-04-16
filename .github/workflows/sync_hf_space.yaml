@@ -19,6 +19,7 @@ jobs:
       - name: Copy demo Dockerfile
         run: |
           cp demo/Dockerfile hf-space/Dockerfile
+          cp demo/README.md hf-space/README.md
 
       - name: Check if there are any changes
         id: check_changes
