@@ -1,21 +1,20 @@
-FROM python:3.12-slim
+FROM ghcr.io/speaches-ai/speaches:latest-cpu
+USER ubuntu
+ENV HOME=/home/ubuntu \
+    PATH=/home/ubuntu/.local/bin:$PATH
 
-ENV HOME=/home/user
-ENV PATH=$HOME/.local/bin:$PATH
+# Ensure the HuggingFace cache directory exists and has proper permissions
+RUN mkdir -p $HOME/.cache/huggingface/hub
 
-RUN apt-get update &&  \
-    apt-get install -y  git &&  \
-    apt-get clean && rm -rf /var/lib/apt/lists/*
+# Create a volume for the HuggingFace cache
+VOLUME ["$HOME/.cache/huggingface/hub"]
 
-WORKDIR /app
+# Environment variables
+ENV UVICORN_HOST=0.0.0.0
+ENV UVICORN_PORT=7860
 
-RUN git clone https://github.com/speaches-ai/speaches.git .
+# Expose the port that the server listens on
+EXPOSE 7860
 
-RUN pip install --upgrade pip && \
-    pip install uv
-
-RUN uv pip install ".[ui]" --system
-
-EXPOSE 8000
-
-CMD ["uvicorn", "--factory", "--host", "0.0.0.0", "--port", "8000", "speaches.main:create_app"]
+# Command to run the server
+CMD ["uvicorn", "--factory", "speaches.main:create_app"]
