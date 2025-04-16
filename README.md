@@ -16,6 +16,7 @@
 ![Python](https://img.shields.io/badge/Python-3.12%2B-blue)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 [![](https://dcbadge.limes.pink/api/server/YuMNeuKStr?style=flat)](https://discord.gg/YuMNeuKStr) <br>
+[![Try on Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Try%20on-Spaces-blue)](https://huggingface.co/spaces/mozilla-ai/speaches-demo)
 
 [Blueprints Hub](https://blueprints.mozilla.ai/)
 | [Documentation](https://github.com/mozilla-ai/speech-to-text/blob/main/README.md)
@@ -29,7 +30,9 @@
 
 This tutorial will guide you through setting up and using [Speaches](https://github.com/speaches-ai/speaches/) to transcribe audio files from the command line or a locally hosted demo UI. Speaches is an OpenAI API-compatible server that provides streaming transcription, translation, and speech generation capabilities.
 
-You can use Speaches either through a web interface using Docker or via the command line by installing the OpenAI CLI tool.
+## Hosted demo on HF Spaces (CPU-only)
+
+You can find a demo of Speaches hosted on HuggingFace Spaces, ready to use [here](https://huggingface.co/spaces/mozilla-ai/speaches-demo). Note that the hardware on that server is limited, so the speed of transcription might be underwhelming for larger variations of whisper-models.
 
 ## Using [Docker](https://docs.docker.com/engine/install/) to run Speaches
 
