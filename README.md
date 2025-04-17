@@ -14,7 +14,7 @@
 
 [![Speaches](https://img.shields.io/badge/Speaches-%F0%9F%8E%A4-yellow)](https://github.com/speaches-ai/speaches/)
 ![Python](https://img.shields.io/badge/Python-3.12%2B-blue)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![](https://dcbadge.limes.pink/api/server/YuMNeuKStr?style=flat)](https://discord.gg/YuMNeuKStr) <br>
 [![Try on Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Try%20on-Spaces-blue)](https://huggingface.co/spaces/mozilla-ai/speaches-demo)
 
